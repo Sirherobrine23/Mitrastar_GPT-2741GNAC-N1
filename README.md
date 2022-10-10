@@ -27,7 +27,7 @@ drwxrwxr-x    8 support  root           112 Apr 18 15:43 usr
 lrwxrwxrwx    1 support  root             8 Apr 18 15:43 var -> /tmp/var
 --IPv4 Test Fin--
 This area is read only.
-``´
+```
 
 - Default route panel: `http://192.168.15.1/padrao`.
 - enable sshd: `http://192.168.15.1/cgi-bin/ping.cgi` ping: `$(sshd; echo '192.168.15.1')`.
