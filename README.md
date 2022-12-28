@@ -6,6 +6,107 @@
 - enable sshd: `http://192.168.15.1/cgi-bin/ping.cgi` ping: `$(sshd; echo '192.168.15.1')`.
 - Root user: ? avaible, so not acessibl
 
+- ps:
+
+```
+    1 support    360 S    init
+    2 support      0 SW   [kthreadd]
+    3 support      0 SW   [ksoftirqd/0]
+    4 support      0 SW   [kworker/0:0]
+    5 support      0 SW   [kworker/u:0]
+    6 support      0 SW   [migration/0]
+    7 support      0 SW   [migration/1]
+    8 support      0 SW   [kworker/1:0]
+    9 support      0 SW   [ksoftirqd/1]
+   10 support      0 SW   [migration/2]
+   11 support      0 SW   [kworker/2:0]
+   12 support      0 SW   [ksoftirqd/2]
+   13 support      0 SW   [migration/3]
+   14 support      0 SW   [kworker/3:0]
+   15 support      0 SW   [ksoftirqd/3]
+   16 support      0 SW<  [khelper]
+   17 support      0 SW   [sync_supers]
+   18 support      0 SW   [bdi-default]
+   19 support      0 SW<  [kblockd]
+   20 support      0 SW   [kswapd0]
+   21 support      0 SW   [fsnotify_mark]
+   22 support      0 SW<  [aio]
+   23 support      0 SW<  [crypto]
+   28 support      0 SW   [mtdblock0]
+   29 support      0 SW   [mtdblock1]
+   30 support      0 SW   [mtdblock2]
+   31 support      0 SW   [mtdblock3]
+   32 support      0 SW   [mtdblock4]
+   33 support      0 SW   [mtdblock5]
+   34 support      0 SW   [mtdblock6]
+   35 support      0 SW   [mtdblock7]
+   36 support      0 SW   [mtdblock8]
+   37 support      0 SW   [mtdblock9]
+   38 support      0 SW   [mtdblock10]
+   39 support      0 SW   [mtdblock11]
+   40 support      0 SW   [mtdblock12]
+   41 support      0 SW   [mtdblock13]
+   42 support      0 SW   [mtdblock14]
+   43 support      0 SW   [mtdblock15]
+   44 support      0 SW   [mtdblock16]
+   45 support      0 SW   [kworker/3:1]
+   46 support      0 SW   [kworker/2:1]
+   47 support      0 SW   [kworker/1:1]
+   48 support      0 SW   [kworker/0:1]
+   74 support      0 SW   [yaffs-bg-1]
+   88 support      0 SW   [yaffs-bg-1]
+  101 support   3144 S    /userfs/bin/cfg_manager
+  109 support    380 S    /usr/sbin/mstc_smd
+  117 support    348 S    /userfs/bin/cfg_manager_watchdog -t 120
+  118 support    476 S    /userfs/bin/tef11nMngr -t 120
+  161 support      0 SW   [kworker/u:1]
+  417 support      0 SW   [xpon_daemon]
+  435 support    288 S    dropbear -r /etc/mycert/ssh.rsa -p 22 -P /var/run/dr
+  459 support    704 S    /userfs/bin/mini_httpd -C /etc/mini_httpd_BR.conf
+  460 support    680 S    /userfs/bin/mini_httpd -C /etc/mini_httpd_cpeInfo_BR
+  476 support    732 S    /userfs/bin/mini_httpd -C /etc/mini_httpd_ssl_BR.con
+  580 support      0 SW   [RtmpCmdQTask]
+  581 support      0 SW   [RtmpWscTask]
+  582 support      0 SW   [RtmpMlmeTask]
+  618 support    388 S    tcwdog -t 1 /dev/watchdog
+  773 support     76 S    clogd
+  775 support   2252 S    /userfs/bin/mosapp -s 4D5354430FD11931 -p 3030313031
+  990 support    300 S    /userfs/bin/kv -d0
+ 1066 support     56 S    /userfs/bin/tftpd
+ 1068 support   1232 S    rmt_qcsmngr
+ 1070 support    388 S    rmt_qcsmngr_watchDog
+ 1437 support    660 S    /usr/sbin/miniupnpd -i ppp0
+ 1439 support   2924 S    /userfs/bin/tr69
+ 1674 support   1156 S    /bin/hz_service -p 26661 -a br0 -t 3
+ 1689 support    336 S    /usr/sbin/rpecat -c netlink -r 00:26:86:00:00:00
+ 1876 support    564 S    dropbear -r /etc/mycert/ssh.rsa -p 22 -P /var/run/dr
+ 1905 support    532 S    bsa_peer_ecnt
+ 1996 support     92 S    init
+ 2032 support    764 S    pppd unit 0 user cliente@cliente password cliente no
+ 2260 support    804 S    /usr/sbin/udhcpd
+ 2266 support    492 S    /sbin/udhcpc -i nas1 -s /usr/script/udhcpc_nodef.sh
+ 2337 support   1120 S    /usr/sbin/csmd -c /etc/csmd.json
+ 3314 support   1568 S N  DiagGeneral.cgi
+ 3316 support    232 S    /userfs/bin/mini_httpd -C /etc/mini_httpd_BR.conf
+ 3332 support    360 S N  /bin/sh -c ping -c 3 1; ps aux > /tmp/ping_result 2>
+ 3333 support    360 R    /bin/sh -c ifconfig nas1 | grep 'inet addr:' | awk '
+ 3335 support      0 Z    [ifconfig]
+ 3336 support      0 Z    [grep]
+ 3337 support      0 Z    [awk]
+ 3338 support      0 Z    [cut]
+ 3339 support    360 R N  ps aux
+ 3590 support   2876 S    /usr/sbin/qharvestd -F -c /usr/etc/qharvestd.conf
+ 6110 support    328 S    /userfs/bin/ntpclient -s -c 2 -i 604800 -R 256 -h po
+ 6121 support    332 S    /userfs/bin/inadyn
+ 6603 support    484 S    /userfs/bin/dhcp6c -c /etc/dhcp6c_ppp0.conf ppp0 -p
+ 6775 support    316 S    /userfs/bin/dnsmasq --interface=br0
+ 6809 support    328 S    /userfs/bin/radvd -C /etc/radvd.conf -p /var/run/rad
+ 6861 support    328 S    /userfs/bin/dhcp6s -c /etc/dhcp6s.conf br0 -P /var/r
+32547 support    680 S    dropbear -r /etc/mycert/ssh.rsa -p 22 -P /var/run/dr
+--IPv4 Test Fin--
+esta &aacute;rea &eacute; somente leitura.
+```
+
 - ls /:
 
 ```
