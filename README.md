@@ -1,4 +1,6 @@
-# Mitrastart_vivo_GPT-2741GNAC-N1-SV
+# Mitrastart_vivo_GPT-2741GNAC-N1
+
+Firmwares: https://drive.google.com/open?id=10ntzbln1yFL2IwdSsvU1ZW2yfkE5z_2C&authuser=srherobrine20%40gmail.com&usp=drive_fs
 
 - Kernel: `Linux MitraStar 2.6.36 #1 SMP Mon Apr 18 23:24:52 CST 2022 mips GNU/Linux`
 - Default route panel: `http://192.168.15.1/padrao`.
