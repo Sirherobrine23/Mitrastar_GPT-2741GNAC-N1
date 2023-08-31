@@ -264,7 +264,8 @@ This area is read only.
 ```
 
 - /etc:
-´´´
+
+```
 drwxrwxr-x   51 support  root             0 Oct  9 14:48 .
 drwxr-xr-x    8 support  root             0 Oct 10 15:07 ..
 -rwxr-xr-x    1 support  root             0 Jan  1  1970 AppFilter.sh
@@ -439,11 +440,11 @@ drwxrwxr-x    2 support  root             0 Apr 18 15:43 system
 drwxrwxr-x    2 support  root             0 Apr 18 15:43 xml
 --IPv6 Test Fin--
 This area is read only.
-´´´
+```
 
 - /tmp:
 
-´´´
+```
 drwxr-xr-x    8 support  root             0 Oct 10 15:12 .
 drwxrwxr-x   17 support  root           295 Apr 18 15:43 ..
 srwxr-xr-x    1 support  root             0 Aug  1  2016 .QTNCSMD_CLI_AF_UNIX
@@ -535,4 +536,4 @@ drwxrwxrwx    9 support  root             0 Oct 10 15:11 var
 -rw-r--r--    1 support  root           385 Oct 10 14:37 wps
 --IPv6 Test Fin--
 This area is read only.
-´´´
+```
