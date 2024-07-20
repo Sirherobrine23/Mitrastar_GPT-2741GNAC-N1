@@ -1,0 +1,37 @@
+€ÿþBGA IC
+Xtal:1
+DDR3 init.
+DRAMC init done. 
+Calculate size.
+DRAM size=256MB
+Set new TRFC.
+ddr-1066
+
+7512DRAMC V1.2.2 (0)
+Set SPI Flash Clock to 25 Mhz
+
+
+U-Boot 1.1.5 (Oct 30 2018 - 15:58:06)
+
+CPU: EN751221
+DRAM: Memory Size: 256 MB
+Set SPI Flash Clock to 25 Mhz
+spi_nand_probe: mfr_id=0xef, dev_id=0xaa
+Dected SPI NAND Flash : _SPI_NAND_DEVICE_ID_W25N01G, Flash Size=0x8000000
+bmt pool size: 81 
+BMT & BBT Init Success 
+DEBUG FLAG : 0
+
+Using default environment
+In:    serial
+Out:   serial
+Err:   serial
+Net:   MTK Switch
+MAC addresses in MRD and Env don't match. 
+Use MAC in MRD: C0:3D:D9:AD:6F:98
+
+## Starting application at 0x81F00000 ...
+
+OK
+Hit any key to stop autoboot: 5
+ZHAL> ÿÿÿÿÿÿÿÿÿ
