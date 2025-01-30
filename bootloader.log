@@ -1,0 +1,158 @@
+BGA IC
+Xtal:1
+DDR3 init.
+DRAMC init done.
+Calculate size.
+DRAM size=256MB
+Set new TRFC.
+ddr-1066
+
+7512DRAMC V1.2.2 (0)
+Set SPI Flash Clock to 25 Mhz
+
+
+U-Boot 1.1.5 (Oct 30 2018 - 15:58:06)
+
+CPU: EN751221
+DRAM: Memory Size: 256 MB
+Set SPI Flash Clock to 25 Mhz
+spi_nand_probe: mfr_id=0xef, dev_id=0xaa
+Dected SPI NAND Flash : _SPI_NAND_DEVICE_ID_W25N01G, Flash Size=0x8000000
+bmt pool size: 81
+BMT & BBT Init Success
+DEBUG FLAG : 1
+
+Using default environment
+In:    serial
+Out:   serial
+Err:   serial
+Net:   MTK Switch
+MAC addresses in MRD and Env don't match.
+Use MAC in MRD: C0:3D:D9:AD:6F:98
+
+## Starting application at 0x81F00000 ...
+
+OK
+Hit any key to stop autoboot: 5
+ZHAL> ?
+?	          Print out help messages.
+HELP	          Print out help messages.
+ATGU	          go back to U-Boot command line mode
+ATUB	          xmodem upload bootloader to flash ROM.
+ATBT	          ATBT <1|0>,Block0 write enable.
+ATLC	          xmodem upload default config to flash ROM.
+ATBR	          Clear current rom file sector
+ATUR	          xmodem upload router firmware to flash ROM.
+ATGO	          Booting the linux kernel.
+ATSH	          dump manufacturer related data in ROM.
+ATWZ	          ATWZ <MAC>,<Country Code>,<EngDebugFlag>,<MainFeatureBit>                       Write MAC address,Country code,EngDebugFlag,MainFeatureBit.
+ATSN	          ATSN <Serial Number>  write Series Number to flash ROM.
+81SN	          81SN <Serial Number>  write 81 Serial Number to flash ROM.
+ATSP	          show User Password.
+ATUP	          ATUP <User Password>  write user password to flash ROM.
+ATSE	          show the seed of password generator.
+ATEN	          ATEN <EngDebugFlag>,<Password>  set BootExtension Debug Flag.
+ATHW	          ATHW <00-ff> Write HW Version
+ATWP	          ATWP <key>  write WPA-PSK key to flash ROM.
+ATSW	          show WPA-PSK key.
+ATMT	          ATMT <1|0>  write HTP switch to flash ROM.
+ATUW	          xmodem upload flash image to flash ROM.
+ATMB	          ATMB <time> (time=sec 0~60)  Multiboot
+ATTF	          enable tftp server.
+ATUS	          enable tftp server for SW SMT flashing.
+ATMI	          Enable/Disable model ID checking (1=enable, 0=disable) .
+ATGS	          ATGS <pon serialNumber>, Set gpon serialNumber.
+ATTM	          ATTM <CYCLES>, Test memory total CYCLES times.
+ATCC	          ATCC <country code>, Set country code.
+ATSC	          ATSC <subcountry code>, Set subcountry code.
+ATHP	          ATHP <1|2>, Set Enable(1)/Disable(2) for HPNA.
+ZHAL> atsh
+
+FW       Version       : V1.11(WVK.0)b32
+External Version       : 100WVK0b1
+Bootbase Version       : V1.20 | 10/30/2018
+Vendor Name            : MitraStar Technology Corp.
+Product Model          : GPT-2741GNAC-N1
+Serial Number          : S200Z60730613
+First MAC Address      : C03DD9AD6F98
+Last MAC Address       : C03DD9AD6F9F
+MAC Address Quantity   : 08
+Default Country Code   : D0
+Boot Module Debug Flag : 01
+Kernel      Checksum   : c78be153
+RootFS      Checksum   : 1fb3eda9
+RomFile     Checksum   : 22b36aec
+Main Feature Bits      : 00
+Other Feature Bits     :
+	 	5a 59 a0 02 00 00 10 37-35 32 31 00 00 00 00 01
+	 	00 00 02 00 00 00 00 00-00 00 00 00 00 00
+
+UserPassword           : e2d4a244
+Pon SerialNumber       : 4D535443039EACF5
+ZHAL> atgu
+
+
+=>## Application terminated, rc = 0x0
+u-boot # ?
+?       - alias for 'help'
+base    - print or set address offset
+bdinfo  - print Board Info structure
+checkbb <total block>
+chkmem <nand> <ddr> <len>
+cmp     - memory compare
+coninfo - print console devices and information
+cp      - memory copy
+crc32   - checksum calculation
+deletebbt - delete bbt
+echo    - echo args to console
+erasepb <block> <num>
+go      - start application at address 'addr'
+help    - print online help
+loadx   - load binary file over serial line (xmodem mode)
+loop    - infinite loop on address range
+markbb <block>
+md      - memory display
+mm      - memory modify (auto-incrementing)
+mtest   - simple RAM test
+mw      - memory write (fill)
+nander <dst> <len>
+nandrd <src> <len>
+nandwr <dst> <src> <len>
+nm      - memory modify (constant address)
+ping	- send ICMP ECHO_REQUEST to network host
+printenv- print environment variables
+reset   - Perform RESET of the CPU
+sleep   - delay execution for some time
+version - print monitor version
+zboot 	- run the zboot
+u-boot # bdinfp
+Unknown command 'bdinfp' - try 'help'
+u-boot # bdinfo
+boot_params = 0x8FA5EFB0
+memstart    = 0x80000000
+memsize     = 0x10000000
+flashstart  = 0xB0000000
+flashsize   = 0x00000000
+flashoffset = 0x00000000
+ethaddr     = C0:3D:D9:AD:6F:98
+ip_addr     = 0.0.0.0
+baudrate    = 115200 bps
+u-boot # coninfo
+List of available devices:
+serial   80000003 SIO stdin stdout stderr
+u-boot # version
+
+U-Boot 1.1.5 (Oct 30 2018 - 15:58:06)
+u-boot # base
+Base Address: 0x00000000
+u-boot # printenv
+bootdelay=5
+baudrate=115200
+ethaddr=02:13:49:FF:FF:FF
+stdin=serial
+stdout=serial
+stderr=serial
+ethact=MTK Switch
+
+Environment size: 113/4092 bytes
+u-boot #
