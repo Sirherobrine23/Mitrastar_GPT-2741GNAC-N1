@@ -1,0 +1,4 @@
+Creating 3 MTD partitions on "spi_flash":
+0x000000000000-0x000000005000 : "uboot"
+0x000000005000-0x00000000b000 : "uboot_env"
+0x00000000b000-0x000000010000 : "data"
