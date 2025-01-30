@@ -1,0 +1,1362 @@
+BGA IC
+Xtal:1
+DDR3 init.
+DRAMC init done.
+Calculate size.
+DRAM size=256MB
+Set new TRFC.
+ddr-1066
+
+7512DRAMC V1.2.2 (0)
+Set SPI Flash Clock to 25 Mhz
+
+
+U-Boot 1.1.5 (Oct 30 2018 - 15:58:06)
+
+CPU: EN751221
+DRAM: Memory Size: 256 MB
+Set SPI Flash Clock to 25 Mhz
+spi_nand_probe: mfr_id=0xef, dev_id=0xaa
+Dected SPI NAND Flash : _SPI_NAND_DEVICE_ID_W25N01G, Flash Size=0x8000000
+bmt pool size: 81
+BMT & BBT Init Success
+DEBUG FLAG : 1
+
+Using default environment
+In:    serial
+Out:   serial
+Err:   serial
+Net:   MTK Switch
+MAC addresses in MRD and Env don't match.
+Use MAC in MRD: C0:3D:D9:AD:6F:98
+
+## Starting application at 0x81F00000 ...
+
+OK
+Hit any key to stop autoboot: 0
+Dual image: checking and selecting FW ......Main image is selected
+Uncompressing [LZMA] ...  done.
+Linux version 2.6.36 (john@GuaiGuaiBuild) (gcc version 4.3.6 (Buildroot 2012.05) ) #1 SMP Tue Nov 23 11:20:10 CST 2021
+ISPRAM0: PA=00300000,Size=00010000,enabled
+memsize:256MB
+EcoNet EN751221 SOC prom init
+bootconsole [early0] enabled
+CPU revision is: 00019558 (MIPS 34Kc)
+Determined physical RAM map:
+ memory: 0ffe0000 @ 00020000 (usable)
+Wasting 1024 bytes for tracking 32 unused pages
+Zone PFN ranges:
+  Normal   0x00000020 -> 0x00010000
+Movable zone start PFN for each node
+early_node_map[1] active PFN ranges
+    0: 0x00000020 -> 0x00010000
+3 available secondary CPU TC(s)
+PERCPU: Embedded 7 pages/cpu @81203000 s7168 r8192 d13312 u65536
+pcpu-alloc: s7168 r8192 d13312 u65536 alloc=16*4096
+pcpu-alloc: [0] 0 [0] 1 [0] 2 [0] 3
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 64992
+Kernel command line:  es=1
+PID hash table entries: 1024 (order: 0, 4096 bytes)
+Dentry cache hash table entries: 32768 (order: 5, 131072 bytes)
+Inode-cache hash table entries: 16384 (order: 4, 65536 bytes)
+Primary instruction cache 64kB, VIPT, 4-way, linesize 32 bytes.
+Primary data cache 32kB, 4-way, VIPT, cache aliases, linesize 32 bytes
+Writing ErrCtl register=0007023f
+Readback ErrCtl register=0007023f
+nmi base is 81274200
+Memory: 255472k/262016k available (3008k kernel code, 6544k reserved, 647k data, 228k init, 0k highmem)
+SLUB: Genslabs=7, HWalign=32, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+Hierarchical RCU implementation.
+	RCU-based detection of stalled CPUs is disabled.
+	Verbose stalled-CPUs detection is disabled.
+NR_IRQS:64
+CPU frequency 900.00 MHz
+ Using 199.968 MHz high precision timer.
+console [ttyS0] enabled, bootconsole disabled
+console [ttyS0] enabled, bootconsole disabled
+Calibrating delay loop... 598.01 BogoMIPS (lpj=2990080)
+pid_max: default: 32768 minimum: 301
+Mount-cache hash table entries: 512
+34K sync es set to 1.
+Config7: 0x80080500
+Limit of 4 TCs set
+TLB of 64 entry pairs shared by 2 VPEs
+VPE 0: TC 0 1 2, VPE 1: TC 3
+IPI buffer pool of 16 buffers
+CPU revision is: 00019558 ((null))
+TC 1 going on-line as CPU 1
+CPU revision is: 00019558 ((null))
+TC 2 going on-line as CPU 2
+CPU revision is: 00019558 ((null))
+TC 3 going on-line as CPU 3
+Brought up 4 CPUs
+NET: Registered protocol family 16
+PCIe driver version: 751221.3.20160516
+MT7512_pcie_init
+check pcie link up status:
+isRC0_LINKUP=1
+isRC1_LINKUP=0
+registering PCI controller with io_map_base unset
+bio: create slab <bio-0> at 0
+pci 0000:00:00.0: BAR 8: assigned [mem 0x20000000-0x200fffff]
+pci 0000:01:00.0: BAR 0: assigned [mem 0x20000000-0x200fffff]
+pci 0000:01:00.0: BAR 0: set to [mem 0x20000000-0x200fffff] (PCI address [0x20000000-0x200fffff]
+pci 0000:00:00.0: PCI bridge to [bus 01-01]
+pci 0000:00:00.0:   bridge window [io  disabled]
+pci 0000:00:00.0:   bridge window [mem 0x20000000-0x200fffff]
+pci 0000:00:00.0:   bridge window [mem pref disabled]
+pci 0000:00:01.0: PCI bridge to [bus 02-02]
+pci 0000:00:01.0:   bridge window [io  disabled]
+pci 0000:00:01.0:   bridge window [mem disabled]
+pci 0000:00:01.0:   bridge window [mem pref disabled]
+PCI: Enabling device 0000:00:00.0 (0000 -> 0002)
+NET: Registered protocol family 8
+NET: Registered protocol family 20
+Switching to clocksource MIPS
+NET: Registered protocol family 2
+IP route cache hash table entries: 2048 (order: 1, 8192 bytes)
+TCP established hash table entries: 8192 (order: 4, 65536 bytes)
+TCP bind hash table entries: 8192 (order: 4, 65536 bytes)
+TCP: Hash tables configured (established 8192 bind 8192)
+TCP reno registered
+UDP hash table entries: 128 (order: 0, 4096 bytes)
+UDP-Lite hash table entries: 128 (order: 0, 4096 bytes)
+NET: Registered protocol family 1
+
+ mt7512_pcie_fixup: 0x1438 = 20000014
+TC3162 hardware watchdog module loaded.
+squashfs: version 4.0 (2009/01/31) Phillip Lougher
+msgmni has been set to 498
+cryptomgr_test used greatest stack depth: 15632 bytes left
+io scheduler noop registered (default)
+ttyS0 at I/O 0xbfbf0003 (irq = 1) is a TC3162
+ECNT ring buffer init success
+brd: module loaded
+
+SPI Flash Init Start
+Found no SPI flash device
+IS_SPIFLASH=0x0, IS_NANDFLASH=0x2, (0xBFA10114)=0x6)
+SPI_NAND_Flash_init: before init, mtx_mode_tog=0xl9, manaul_en=0x1
+spi_nand_probe: mfr_id=0xef, dev_id=0xaa
+Dected SPI NAND Flash : _SPI_NAND_DEVICE_ID_W25N01G, Flash Size=0x8000000
+spi nand flash
+tc3162: flash device 0x00400000 at 0x1fc00000
+EN7512 mtd init: spi nand probe enter
+[spi_nand_setup] : Enter
+NAND device: Manufacturer ID: 0xef, Chip ID: 0xaa (Unknown _SPI_NAND_DEVICE_ID_W25N01G)
+nand_scan_ident ok
+[spi_nand_setup]: chip size =  0x8000000, erase_shift=0x11
+calc_bmt_pool_size : need_valid_block_num=0x51, total_block=0x400
+bmt pool size: 81
+BMT & BBT Init Success
+Debug Flag : 1
+RESERVEAREA_PAGE : 0xea40 - 0xeb40
+BOSA_BACKUP_PAGE : 0xd040 - 0xd840
+Page (11)
+Creating 17 MTD partitions on "EN7512-SPI_NAND":
+0x000000000000-0x000000020000 : "bootloader"
+0x000000020000-0x000000040000 : "romfile"
+0x000000040000-0x00000017eacc : "Kernel_main"
+mtd: partition "Kernel_main" doesn't end on an erase block -- force read-only
+0x00000017eacc-0x000001c80c19 : "Rootfs_main"
+mtd: partition "Rootfs_main" doesn't start on an erase block boundary -- force read-only
+0x000001c60c19-0x000001c6804e : "Defcfg_main"
+mtd: partition "Defcfg_main" doesn't start on an erase block boundary -- force read-only
+0x000000040000-0x000003220000 : "Tclinux_main"
+0x000003220000-0x00000335eaa2 : "kernel"
+mtd: partition "kernel" doesn't end on an erase block -- force read-only
+0x00000335eaa2-0x000004e5e16f : "rootfs"
+mtd: partition "rootfs" doesn't start on an erase block boundary -- force read-only
+0x000004e3e16f-0x000004e455a4 : "defcfg"
+mtd: partition "defcfg" doesn't start on an erase block boundary -- force read-only
+0x000003220000-0x000006400000 : "tclinux"
+0x000007520000-0x0000075a0000 : "reservearea"
+0x0000075a0000-0x0000075c0000 : "romd"
+0x0000075c0000-0x0000075e0000 : "second_romfile"
+0x000006420000-0x000006820000 : "data"
+0x000006820000-0x000006a20000 : "bosa_main"
+0x000006a20000-0x000006c20000 : "bosa_backup"
+0x000006c20000-0x000007520000 : "app"
+
+root filesystem is from Rootfs_main
+PPP generic driver version 2.4.2
+PPP Deflate Compression module registered
+PPP BSD Compression module registered
+NET: Registered protocol family 24
+IMQ driver loaded successfully.
+	Hooking IMQ after NAT on PREROUTING.
+	Hooking IMQ before NAT on POSTROUTING.
+RT3xxx EHCI/OHCI init.
+net/core/klink_updown.c:101 >> Create link_updown kernel netlink success!
+u32 classifier
+    Performance counters on
+    Actions configured
+Netfilter messages via NETLINK v0.30.
+nf_conntrack version 0.5.0 (3991 buckets, 15964 max)
+ctnetlink v0.93: registering with nfnetlink.
+nf_conntrack_rtsp v0.6.21 loading
+NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+xt_time: kernel timezone is -0000
+Create successful!!!
+nf_nat_rtsp v0.6.21 loading
+ip_tables: (C) 2000-2006 Netfilter Core Team
+TCP cubic registered
+NET: Registered protocol family 10
+ip6_tables: (C) 2000-2006 Netfilter Core Team
+IPv6 over IPv4 tunneling driver
+NET: Registered protocol family 17
+Ebtables v2.0 registered
+802.1Q VLAN Support v1.8 Ben Greear <greearb@candelatech.com>
+All bugs added by David S. Miller <davem@redhat.com>
+VFS: Mounted root (squashfs filesystem) readonly on device 31:3.
+Freeing unused kernel memory: 228k freed
+busybox init and set aff
+chmod:chmod used greatest stack depth: 14832 bytes left
+ /userfs/profile.cfg: Read-only file system
+devpts: called with bogus options
+mount used greatest stack depth: 14320 bytes left
+busybox used greatest stack depth: 14088 bytes left
+mtd[readflash]:device=reservearea tclen=160 tcoffset=198144
+Unlocking reservearea ...
+Reading from reservearea to /tmp/7570_bob.conf ...
+module_sel: module license 'unspecified' taints kernel.
+Disabling lock debugging due to kernel taint
+
+tcsmux version: tcsmux V1.1.0.0 (Jan 12 2018-17:48:47).
+
+tcportbind version: tcportbind V1.1.0.0 (Jan 12 2018-17:48:49).
+vlantag_drv_init
+TCSUPPORT_IPV6
+TC3162 LED Manager 0.1 init
+
+tcledctrl version: tcledctrl V1.1.0.0 (Nov 23 2021-11:20:27).
+led path:/userfs/led.conf
+ledInit is not ready!
+ledInit Done...
+insmod used greatest stack depth: 13912 bytes left
+tccicmd V1.1.0.0 (Nov 23 2021-11:20:28)
+
+SIFMaster 0.1 init
+
+Register sifm cmd
+mount app partition mtdblock16
+yaffs: dev is 32505872 name is "mtdblock16" rw
+yaffs: passed flags "tags-ecc-off"
+mount app partition success!
+mount data partition mtdblock13
+yaffs: dev is 32505869 name is "mtdblock13" rw
+yaffs: passed flags "tags-ecc-off"
+mount data partition success!
+mount bosa_main partition mtdblock14
+yaffs: dev is 32505870 name is "mtdblock14" rw
+yaffs: passed flags "tags-ecc-off"
+mount bosa_main partition success!
+mount bosa_backup partition mtdblock15
+yaffs: dev is 32505871 name is "mtdblock15" rw
+yaffs: passed flags "tags-ecc-off"
+mount bosa_backup partition success!
+==========BRAZIL LOCAL=============
+directory /data/manufStat exist
+File /  CfgNodeTableInit@657  unifyfw_countryCode= d0
+da d0:1:1:1:1:1:1:1
+ta/subcountry is found!, getSubcountry: 00
+write file (/tmp/md5.txt) successfully!
+The number of cache node is 5
+Start to get customer running romfile.
+compressedLen = 36072
+Internet blue led flash on(2Hz). num = 111
+cp: can't stat '/etc/udhcp_lease': No such file or directory
+compressedLen = 36072
+fopen() error!
+compressedLen = 36072
+[get_romfile_by_index]: original configuration length[177463]
+[get_romfile_by_index]: new configuration length[177463]
+Get current configuration #2 successfully.
+Read current configuration...
+Start to get customer default romfile.
+insmod ETH_LAN driver
+get_customer_def_romfile: Country code match to D0
+Filget_customer_def_romfile: Subcountry code match to 00
+e /data/compressedLen = 29936
+subcountry is found!, getSubcountry: 00
+Get current configuration successfully.
+Read default configuration...
+delay_at_first_time = 120
+cfg_manager_watchdog in regular mode.
+delay 120 s for cfg_manager process.
+sslca_verify!
+delay_at_first_time = 120
+tef11nMngr in regular mode.
+delay 120 s for tef11nMngr .
+macType = 0
+qdma_lan: physical_size is 0x00200000
+Start to get customer default romfile.
+get_customer_def_romfile: Country code match to D0
+Filget_customer_def_romfile: Subcountry code match to 00
+e /datcompressedLen = 29936
+a/subcountry is found!, getSubcountry: 00
+Get current configuration successfully.
+Read default configuration...
+sslca_verify!
+[romConvert_brazil_local_write]: Start romconvert
+
+ romConvert_brazil_account_write() version=20210913
+Fil[romConvert_brazil_local_write]: End romconvert
+e /data/subcountry is found!, getSubcountry: 00
+
+ node is NULLcp: can't stat '/etc/udhcp_lease': No such file or directory
+fopen() error!
+
+ node is NULL
+ node is NULL
+ node is NULLifconfig: br0: error fetching interface information: Device not found
+
+ether.c:v1.00-NAPI 29.Mar.2015
+eth0: FE MAC Ethernet address: C0:3D:D9:AD:6F:98
+gpon IOCTL fUser External switch ,type 10
+ile open failed!
+gpon IOCTL file open failed!
+EN7512 TRGMII V1.0gpon IOCTL file open failed!
+gpon IOCTL file open failed!
+gpon IOCTL file open failed!
+gpon IOCTL file open failed!
+gpon IOCTL file open failed!
+gpon IOCTL file open failed!
+gpon IOCTL file open failed!
+gpon IOCTL file open failed!
+gpon IOCTL file open failed!
+gpon IOCTL filFunc:dhcp6sCall_write Line:27642 ipv6_start:1 ipv6_end:ffff
+e open failed!
+gpon IOCTL file open failed!
+gpon IOCTL file open failed!
+gpon IOCTL file open failed!
+gpon IOCTL file open failed!
+gpon IOCTL file open failed!
+gpon IOCTL file open failed!
+gpon IOCTL file open failed!
+gpon IOCTL file open failed!
+cp: can't stat '/etc/udhcp_lease': No such file or directory
+gpon IOCTL file open failed!
+fopen() error!
+gpon IOCTL file open failed!
+Can't open /etc/isp10.conf
+gpon IOCTL file open failed!
+gpon IOCTL file open failed!
+WPSActiveStatus = NULL
+WPSOOBActive = NULL
+mrd.CountryCode = D0
+Success to set CountryRegion by mrd country code.
+mrd.CountryCode = D0
+mtd[readflash]:device=reservearea tclen=512 tcoffset=393216
+tcPhyVerLookUp 3783 9412
+ 7530 Ge, 0x1
+MCM MT7530
+ [tcPhyInit] in  [tcPhyInit] out , r31 = (0, 0x0)
+tcPhyVerLookUp 3783 9412
+ 7530 Ge, 0x1
+MCM MT7530
+ [tcPhyInit] in  [tcPhyInit] out , r31 = (1, 0x0)
+tcPhyVerLookUp 3783 9412
+ 7530 Ge, 0x1
+MCM MT7530
+ [tcPhyInit] in Unlocking reservearea ...
+Reading [tcPhyInit] out , r31 = (2, 0x0)
+ tcPhyVerLookUp 3783 9412
+ 7530 Ge, 0x1
+froMCM MT7530
+ [tcPhyInit] in m reservearea to /tmp/RT30xxEEPROM.bin ...
+ [tcPhyInit] out , r31 = (3, 0x0)
+tcPhyVerLookUp 3783 9412
+ 7530 Ge, 0x1
+MCM MT7530
+ [tcPhyInit] in wlan_write@14041: Add support mode flag.
+ [tcPhyInit] out , r31 = (4, 0x0)
+tcPhyVerLookUp 3783 0
+MCM MT7530
+tcPhyVerLookUp 3783 0
+MCM MT7530
+tcPhyVerLookUp 3783 0
+MCM MT7530
+tcPhyVerLookUp 3783 0
+MCM MT7530
+tcPhyVerLookUp 3783 0
+MCM MT7530
+tcPhyVerLookUp 3783 0
+MCM MT7530
+tcPhyVerLookUp 3783 0
+MCM MT7530
+tcPhyVerLookUp 3783 9451
+ 7512 Ge,
+MCM MT7530
+ [tcPhyInit] in  [tcPhyInit] out , r31 = (12, 0x0)
+  GE Rext AnaCal Done! (1)(0x21)
+  GE Rext AnaCal Done! (1)(0x21)
+  GE R50 AnaCal Done! (1) (0x28)(0xa8)
+  GE R50 AnaCal Done! (2) (0x27)(0xa7)
+  GE R50 AnaCal Done! (2) (0x27)(0xa7)
+  GE R50 AnaCal Done! (2) (0x27)(0xa7)
+ GE Tx offset AnaCal Done! (5)(0x25)
+ GE Tx offset AnaCal Done! (3)(0x23)
+ GE Tx offset AnaCal Done! (1)(0x21)
+ GE Tx offset AnaCal Done! (3)(0x23)
+open failed
+ GE Tx amp AnaCal Done! (pair-0)(0x12)(0x2020)
+wlan_ext_write Node Entry2 is Null
+wlan_ext_write Node Entry3 is Null
+tr181firewall_write
+
+Add CWMP pass through rules. GE Tx amp AnaCal Done! (26) (0x6)
+account_write getAttrValue WanSecurity fail.
+ GE Tx amp AnaCal Done! (pair-1)(0x17)(0xe20)
+ GE Tx amp AnaCal Done! (20) (0xc)
+chmod: /userfs/profile.cfg: Read-only file system
+ GE Tx amp AnaCal Done! (pair-2)(0x19)(0x520)
+ GE Tx amp AnaCal Done! (29) (0x3)
+ GE Tx amp AnaCal Done! (pair-3)(0x21)(0xe20)
+ GE Tx amp AnaCal Done! (20) (0xc)
+tcPhyVerLookUp 3783 0
+MCM MT7530
+tcPhyVerLookUp 3783 0
+MCM MT7530
+tcPhyVerLookUp 3783 0
+MCM MT7530
+Power Down GE PHY
+ force [12] power down
+Exec. Successful
+Exec. Successful
+Exec. Successful
+eth0: starting interface.
+netif_start_queue
+iptables:iptables used greatest stack depth: 13608 bytes left
+ No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables v1.4.11: Couldn't find target `FrwlInChk'
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables v1.4.11: Couldn't find target `FrwlOutChk'
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables v1.4.11: Couldn't find target `FrwlForwardInChk'
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+cp: can't stat '/etc/udhcp_lease': No such file or directory
+fopen() error!
+iptables: Bad rule (does a matching rule exist in that chain?).
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables v1.4.11:macType = 0
+ Couldn't find target `TR181FrwlInput'
+
+Try `iptables -h' or 'iptables --hqdma_wan: qdma_bmgr.c [2644]: HW_FWD physical size is not illegal, force setting to 4MB
+eqdma_wan: physical_size is 0x00400000
+lp' for more information.
+iptables v1.4.11: Couldn't find target `TR181FrwlOutput'
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables v1.4.11: Couldn't find target `TR181FrwlForward'
+
+Try `iptables -h' or 'iptables --help' for more information.
+insmod: can't insert '/lib/modules/2.6.36/kernel/net/bridge/netfilter/ebtable_filter.ko': No such file or directory
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: Bad rule (does a matching rule exist in that chain?).
+Sorry, rule does not exist.
+Exec. Successful
+The kernel doesn't support a certain ebtables extension, consider recompiling your kernel or insmod the extension.
+Exec. Successful
+Exec. Successful
+Sorry, rule does not exist.
+chmod: /userfs/profile.cfg: Read-only file system
+The kernel doesn't support a certain ebtables extension, consider recompiling your kernel or insmod the extension.
+Sorry, rule does not exist.
+_SIF_DrvRawRead:
+Error sub-addr!
+Error! phy_I2C_read return value = 0
+u1DevAddr:0x70, u4WordAddr:0x170
+EN7570 not found!
+_SIF_DrvRawRead:
+Error sub-addr!
+Error! phy_I2C_read return value = 0
+u1DevAddr:0x50, u4WordAddr:0x14
+_SIF_DrvRawRead:
+Error sub-addr!
+Error! phy_I2C_read return value = 0
+u1DevAddr:0x50, u4WordAddr:0x28
+SPON PHY driver version is 151202.102.102
+orry, rule does not exist.
+Sorry, rule does not exist.
+Sorry, rule does not exist.
+Sorry, rule does not exist.
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+Sorry, rule does not exist.
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+Sorry, rule does not exist.
+ip6tables v1.4.11: Couldn't find target `AppFrwlForwardOutChk'
+
+Try `ip6tables -h' or 'ip6tables --help' for more information.
+Sorry, rule does not exist.
+ip6tables: No chain/target/match by that name.
+xPON driver initialization
+Alloc data struct memory successful, 35304
+Sorry, rule does not exist.
+sslca_write:get Frag Number failed!
+sslca_write:get Frag Number failed!
+sslca_write:get Frag Number failed!
+sslca_write:get Frag Number failed!
+Open /dev/hwnat0 pseudo device failed
+cp: can't stat '/etc/udhcp_lease': No such file or directory
+killall: dropbear: no process killed
+fopen() error!
+[PON Transceiver]Check Semtech GN25L95 info
+[PON Transceiver] BOSA without EEPROM !!
+[PON Transceiver] read /bosa/hwconfig done ,len:2048
+chmod: /userfs/profile.cfg: Read-only file system
+Restarting
+killall: mini_httpd: no process killed
+[HPNAInterface_write:451] ERROR: getAttrValue() fail
+vsProfile_write:190, getAttrValue() failed
+vsProfileLine_write:642, getAttrValue() failed
+
+
+EVENT_CFG_TOTAL_UPDATE
+
+
+
+EVENT_CFG_TOTAL_UPDATE
+
+ra0       no private ioctls.
+
+ra0       no private ioctls.
+
+[getVoipProfileMark:3094], WanNode:  IfMarkStr:
+cp: can't stat '/etc/udhcp_lease': No such file or directory
+fopen() error!
+bind: Address alrmini_httpd used greatest stack depth: 13432 bytes left
+eady in use
+bind: Address already in use
+/userfs/bin/mini_httpd: started as root without requesting chroot(), warning only
+bind: Address already in use
+/userfs/bin/mini_httpd: started as root without requesting chroot(), warning only
+1.1.1.2: RPC: Port mapper failure - RPC: Unable to send
+1.1.1.2: RPC: Port mapper failure - RPC: Unable to send
+1.1.1.2: RPC: Port mapper failure - RPC: Unable to send
+1.1.1.2: RPC: Port mapper failure - RPC: Unable to send
+1.1.1.2: RPC: Port mapper failure - RPC: Unable to send
+1.1.1.2: RPC: Port mapper failure - RPC: Unable to send
+1.1.1.2: RPC: Port mapper failure - RPC: Unable to send
+1.1.1.2: RPC: Port mapper failure - RPC: Una<dhcp6Lease_read>Invalid attr (j�j�
+ble to send
+/userfs/bin/mini_httpd: started as root without requesting chroot(), warning only
+ra0       no private ioctls.
+
+read of forward table failed: No such device
+read of forward table failed: No such device
+cp: can't stat '/etc/udhcp_lease': No such file or directory
+fopen() error!
+read of forward table failed: No such device
+[PON Transceiver] [bob] file default EEPROM(reg) done ...0
+[PON Transceiver] Install successfully
+insmod used greatest stack depth: 11704 bytes left
+read of forward table failed: No such device
+XPON Mapping Module init OK!
+TCSUPPORT_WLAN
+TCSUPPORT_WLAN_MT7592
+cp: can't stat '/etc/udhcp_lease': No such file or directory
+fopen() error!
+read of forward table failed: No such device
+read of forward table failed: No such device
+cp: can't stat '/etc/udhcp_lease': No such file or directory
+fopen() error!
+register mt_drv
+rt_pci_init_module(): Start.
+netlink_socket_init(): Hello, SONiQ.
+rt_pci_init_module(): file open fail
+PCI: Enabling device 0000:01:00.0 (0000 -> 0002)
+
+
+=== pAd = c1302000, size = 1229432 ===
+
+<-- RTMPAllocTxRxRingMemory, Status=0, ErrorValue=0x
+<-- RTMPAllocAdapterBlock, Status=0
+pAd->CSRBaseAddress =0xc1200000, csr_addr=0xc1200000!
+device_id =0x7603
+RtmpChipOpsHook(507): Not support for HIF_MT yet!
+mt7603_init()-->
+mt_bcn_buf_init(224): Not support for HIF_MT yet!
+<--mt7603_init()
+Mirror/redirect action on
+HPNA exist=0
+HPNA not Exist
+HWNAT Module enabled with Type:L2B/IPv4/IPv6/DS-LITE/6RD, foeSize:80B, foeNum:16384
+IP check use Black List
+device eth0 entered promiscuous mode
+TCSUPPORT_WLAN: ifconfig
+TX_BCN DESC ad86a000 size = 320
+RX[0] DESC ad052000 size = 2048
+RX[1] DESC ad053000 size = 2048
+cfg_mode=7
+cfg_mode=7
+wmode_band_equal(): Band Equal!
+Key1Str is Invalid key length(1) or Type(0)
+Key1Str is Invalid key length(1) or Type(0)
+Key1Str is Invalid key length(1) or Type(0)
+Key1Str is Invalid key length(1) or Type(0)
+Key2Str is Invalid key length(1) or Type(0)
+Key2Str is Invalid key length(1) or Type(0)
+Key2Str is Invalid key length(1) or Type(0)
+Key2Str is Invalid key length(1) or Type(0)
+Key3Str is Invalid key length(1) or Type(0)
+Key3Str is Invalid key length(1) or Type(0)
+Key3Str is Invalid key length(1) or Type(0)
+Key3Str is Invalid key length(1) or Type(0)
+Key4Str is Invalid key length(1) or Type(0)
+Key4Str is Invalid key length(1) or Type(0)
+Key4Str is Invalid key length(1) or Type(0)
+Key4Str is Invalid key length(1) or Type(0)
+[PMF]Set_PMFMFPC_Proc:: apidx=0, Desired MFPC=0
+[PMF]Set_PMFMFPR_Proc:: apidx=0, Desired MFPR=0
+[PMF]Set_PMFSHA256_Proc:: apidx=0, Desired PMFSHA256=0
+FW Version:CL173766-A
+FW Build Date:20170925114906
+CmdAddressLenReq:(ret = 0)
+CmdFwStartReq: override = 1, address = 1048576
+CmdStartDLRsp: WiFI FW Download Success
+efuse_probe: efuse = 10000002
+RtmpChipOpsEepromHook::e2p_type=4, inf_Type=5
+RtmpEepromGetDefault::e2p_dafault=1
+RtmpChipOpsEepromHook: E2P type(4), E2pAccessMode = 4, E2P default = 1
+NVM is BIN mode
+1. Phy Mode = 12
+Cal Free IC!!
+@@@  NICReadEEPROMParameters : pAd->FWLoad=0
+Country Region from e2p = ffff
+tssi_1_target_pwr_g_band = 34
+2. Phy Mode = 12
+3. Phy Mode = 12
+NICInitPwrPinCfg(14): Not support for HIF_MT yet!
+NICInitializeAsic(585): Not support rtmp_mac_sys_reset () for HIF_MT yet!
+mt_mac_init()-->
+mt7603_init_mac_cr()-->
+AsicSetMacMaxLen(1919): Set the Max RxPktLen=1024!
+<--mt_mac_init()
+	WTBL Segment 1 info:
+		MemBaseAddr/FID:0x28000/0
+		EntrySize/Cnt:32/128
+	WTBL Segment 2 info:
+		MemBaseAddr/FID:0x40000/0
+		EntrySize/Cnt:64/128
+	WTBL Segment 3 info:
+		MemBaseAddr/FID:0x42000/64
+		EntrySize/Cnt:64/128
+	WTBL Segment 4 info:
+		MemBaseAddr/FID:0x44000/128
+		EntrySize/Cnt:32/128
+MtAsicACQueue: Write CR:21510, Value=10421
+MtAsicACQueue: Write CR:21500, Value=10421
+AntCfgInit(2620): Not support for HIF_MT yet!
+RTMPSetPhyMode(): channel out of range, use first ch=0
+MCS Set = ff ff 00 00 01
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+SYNC - BBP R4 to 20MHz.l
+[PMF]ap_pmf_init:: apidx=0, MFPC=0, MFPR=0, SHA256=0
+[PMF]RTMPMakeRsnIeCap: RSNIE Capability MFPC=0, MFPR=0
+[PMF]ap_pmf_init:: apidx=1, MFPC=0, MFPR=0, SHA256=0
+[PMF]ap_pmf_init:: apidx=2, MFPC=0, MFPR=0, SHA256=0
+[PMF]ap_pmf_init:: apidx=3, MFPC=0, MFPR=0, SHA256=0
+AsicSetRalinkBurstMode(4332): Not support for HIF_MT yet!
+RTMPSetPiggyBack(969): Not support for HIF_MT yet!
+AsicSetTxPreamble(4319): Not support for HIF_MT yet!
+AsicAddSharedKeyEntry(2085): Not support for HIF_MT yet!
+AsicSetPreTbtt(): bss_idx=0, PreTBTT timeout = 0xa0
+Main bssid = c0:3d:d9:ad:6f:98
+<==== rt28xx_init, Status=0
+RT28xx_Monitor_Init: 778 !!!!####!!!!!!
+uuid=bc329e00-1dd8-11b2-8601-c03dd9ad6f98
+
+WscInit: Random PIN code.
+uuid=bc329e00-1dd8-11b2-8601-c23dd99d6f98
+
+WscInit: Random PIN code.
+uuid=bc329e00-1dd8-11b2-8601-c23dd9ad6f98
+
+WscInit: Random PIN code.
+uuid=bc329e00-1dd8-11b2-8601-c23dd9bd6f98
+
+WscInit: Random PIN code.
+jiffies=ffff9454, POLLING_MODE_DETECT_INTV=300
+WiFi Startup Cost (ra0): 6.690s
+MainVirtualIF_open(): file open fail
+[MainVirtualIF_open][267]bsa_peer_brcm is not ready.
+device ra0 entered promiscuous mode
+##### mbss_cr_enable, BssId = 1
+device ra1 entered promiscuous mode
+##### mbss_cr_enable, BssId = 2
+device ra2 entered promiscuous mode
+##### mbss_cr_enable, BssId = 3
+cp: can't stat '/etc/udhcp_lease': No such file or directory
+device ra3 entered promiscuous mode
+TCSUPPORT_WLAN_WDS
+fopen() error!
+WscStatus[1]
+no specific node
+TC3162 hardware watchdog initialized
+pid 0's affinity mask: 8
+pid 0's affinity mask: 4
+pid 0's affinity mask: 2
+/dev/wdog2 open error.
+/dev/wdog1 open error.
+pid 0's affinity mask: 1
+/dev/wdog0 open error.
+/dev/wdog3 open error.
+four ports
+device eth0.1 is not a slave of br0
+device eth0.2 is not a slave of br0
+device eth0.3 is not a slave of br0
+device eth0.4 is not a slave of br0
+device eth0 is already a member of a bridge; can't enslave it to bridge br0.
+device eth0.1 entered promiscuous mode
+device eth0.2 entered promiscuous mode
+device eth0.3 entered promiscuous mode
+device eth0.4 entered promiscuous mode
+device eth0 left promiscuous mode
+br0: port 1(eth0) entering disabled state
+*reg=000000a0 value:00095003 (ext_switch:1)
+pon_vlan_init
+
+Multi Lan port
+ initilize xpon igmp module....done!
+pon_mac_filter_init
+
+Multi Lan portcp: can't stat '/etc/udhcp_lease': No such file or directory
+fopen() error!
+ifconfig: SIOCSIFMTU: Invalid argument
+*reg=00001640 value:00000000 (ext_switch:0)
+
+&&&&&&&&&&&&&&&&&&&&&&&&&&&&& Enable RGMII1 for QTN &&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+cp: can't stat '/etc/udhcp_lease': No such file or directory
+fopen() error!
+start upgarde_fw
+mtd[readflash]:device=tclinux tclen=32 tcoffset=0
+Unlocking tclinux ...
+Reading from tclinux to
+ gpon_boot:  main_trx.bin Bad trx magic:4d0fc9c,true:32524448
+ /tmp/main_trx.bin ...
+MosUserConfig_Entry get OMCCversion error
+00:00:27 imgr.c [71]: Initial system driver.
+00:00:27 imgr.c [77]: Initial pthread parameters.
+00:00:27 imgr.c [83]: Initial dispatcher.
+00:00:27 dspch_init.c [23]: Create IPC trap message queue
+00:00:27 dspch_init.c [36]: Create IPC trap message queue
+00:00:27 imgr.c [89]: Initial database manager.
+00:00:27 dbmgr_init.c [32]: Create database memory.
+00:00:27 dbmgr_init.c [38]: Create the share database memory successful.
+00:00:27 dbmgr_init.c [41]: The total share database size is 0.
+00:00:27 imgr.c [95]: Initial config manager.
+00:00:27 imgr.c [101]: Initial fault manager.
+00:00:27 imgr.c [107]: Initial performance manager.
+Starting
+Output Type[0]:debug
+info:Value = 0x00	warn:Value = 0x00	err:Value = 0x00	
+
+Output Type[0]:log
+info:Value = 0x01	warn:Value = 0x00	err:Value = 0x00	
+
+Output Type[0]:debug
+info:Value = 0x00	warn:Value = 0x00	err:Value = 0x00	
+
+Output Type[0]:log
+info:Value = 0x05	warn:Value = 0x00	err:Value = 0x00	
+
+========================insmod iptable_filter=======================
+insmod: can't insert '/lib/modules/2.6.36/kernel/net/ipv4/netfilter/iptable_filter.ko': No such file or directory
+chmod: /userfs/profile.cfg: Read-only file system
+iptables: Chain already exists.
+iptables: Chain already exists.
+Enable GPON ONU
+sh used greatest stack depth: 6320 bytes left
+iptables: Chain already exists.
+iptables: Chain already exists.
+iptables: Chain already exists.
+File /data/subcountry is found!, getSubcountry: 00
+File /data/subcountry is found!, getSubcountry: 00
+File /data/subcountry is found!, getSubcountry: 00
+File /data/subcountry is found!, getSubcountry: 00
+chmod: /userfs/profile.cfg: Read-only file system
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+ip6tables: No chain/target/match by that name.
+ifconfig: SIOCDIFADDR: Cannot assign requested address
+br0: port 9(eth0.4) entering forwarding state
+br0: port 9(eth0.4) entering forwarding state
+br0: port 8(eth0.3) entering forwarding state
+br0: port 8(eth0.3) entering forwarding state
+br0: port 7(eth0.2) entering forwarding state
+br0: port 7(eth0.2) entering forwarding state
+br0: port 6(eth0.1) entering forwarding state
+br0: port 6(eth0.1) entering forwarding state
+br0: port 5(ra3) entering forwarding state
+br0: port 5(ra3) entering forwarding state
+br0: port 4(ra2) entering forwarding state
+br0: port 4(ra2) entering forwarding state
+br0: port 3(ra1) entering forwarding state
+br0: port 3(ra1) entering forwarding state
+br0: port 2(ra0) entering forwarding state
+br0: port 2(ra0) entering forwarding state
+done
+never heard of command [br0]Enter set first loop, IP addr by Dhcp6s
+Usage: brctl [commands]
+commands:
+	addbr     	<bridge>		add bridge
+	delbr     	<bridge>		delete bridge
+	addif     	<bridge> <device>	add interface to bridge
+	delif     	<bridge> <device>	delete interface from bridge
+	setageing 	<bridge> <time>		set ageing time
+	sFunc:dhcp6sCall_write Line:27642 ipv6_start:1 ipv6_end:ffff
+etbridgeprioset dhcp6s.conf success.	<bridge> <prio>		set bridge priority
+	setfd     	<bridge> <time>		set bridge forward delay
+	sethello  	<bridge> <time>		set hello time
+	setmaxage 	<bridge> <time>		set max message age
+	setpathcost	<bridge> <port> <cost>	set path cost
+	setportprio	<bridge> <port> <prio>	set port priority
+	show      				show a list of bridges
+	showmacs  	<bridge>		show a list of mac addrs
+	showstp   	<bridge>		show bridge stp info
+	stp       	<bridge> {on|off}	turn stp on/off
+	snoop     	<bridge> {on|off}	turn snoop on/off
+	snoopageing	<bridge> <time>		set snoop ageing time
+	quickleave	<bridge> {on|off}	turn snoop quickleave on/off
+	snoopdbg  	<bridge> {on|off}	turn snoop dbg on/off
+	showsnoop 	<bridge>		show a list of multicast addrs
+	lastmemberqueryinterval	<bridge> <time>	set snoop last member query interval
+	mroutertimeout	<bridge> <time>	set snoop query interval
+	leavetimeout	<bridge> <time>	set snoop leave timeout
+	maxgroups 	<bridge> <time>	set the maximum of igmp snooping group
+	addmarkforward	<mark> <bridge> <port> 	set mark forward
+	delmarkforward	<mark/all> 	delete mark forward
+	showmarkforward			show mark forward
+	enablemarkforward	<1/0>		enable/disable mark forward
+	dropigmppacket	<bridge> {on|off}	turn drop igmp packet on/off
+Radvd function activated!
+killall: dnsmasq: no process killed
+radvd starting
+Open file OK fd=8
+/bin/sh: /userfs/bin/dproxy: not found
+===================read information===================
+72:D7:8C:8F:F1:9F	c0a80f5e
+80:00:0B:6C:98:0F	c0a80fb4
+D0:BF:9C:26:FA:65	c0a80f53
+===================read information===================
+[main]running 802_11_KV_SampleApp
+[driver_wext_init]Initialize ralink wext interface
+read WLAN driver from rt_device failed,set with default value!
+br0: port 3(ra1) entering forwarding state
+br0: port 4(ra2) entering forwarding state
+br0: port 5(ra3) entering forwarding state
+[main]argv[0] /userfs/bin/kvctrl
+[main]argv[1] ra0
+[main]argv[2] btm
+[main]argv[3] 1
+[hotsot_ctrl_open]hotsot_ctrl_open
+[hotsot_ctrl_open]
+
+ctrl_path: /tmp/hotspot
+len=13
+len=9
+!!!token1=cmd
+!!token2=btm 1
+[driver_rrm_onoff]Daemon: cmd->command_id = 1
+[hotspot_ctrl_iface_cmd_btm]sending btm on
+[hotspot_cli_cmd_btm]
+cmd = {
+interface=ra0
+cmd=btm 1}
+rsp = {
+
+}
+ERROR: trying to add VLAN #5 to IF -:eth0:-  error: File exists
+device eth0.5 entered promiscuous mode
+br0: port 1(eth0.5) entering forwarding state
+br0: port 1(eth0.5) entering forwarding state
+Daemon Successfully forked (pid: 1052)
+insmod: can't insert '/lib/modules/2.6.36/kernel/net/bridge/netfilter/ebtable_filter.ko': No such file or directory
+Sorry, rule does not exist.
+Sorry, rule does not exist.
+
+main@4625:interface connect to 5G module is up
+filename = u-boot.bin
+ rmt_qicsapi_mngr_watchDog start!
+tr181firewall_boot
+iptables: Bad rule (does a matching rule exist in that chain?).
+chmod: /userfs/profile.cfg: Read-only file system
+iptables: No chain/target/match by that name.
+chmod: /userfs/profile.cfg: Read-only file system
+iptables: Chain already exists.
+iptables: Chain already exists.
+iptables: Chain already exists.
+iptables: Chain already exists.
+iptables: Chain already exists.
+iptables: Chain already exists.
+/bin/sh: /tmp/etc/tr181firewall_chain0.sh: not found
+/bin/sh: /tmp/etc/tr181firewall_chain1.sh: not found
+/bin/sh: /tmp/etc/tr181firewall_chain2.sh: not found
+/bin/sh: /tmp/etc/tr181firewall_chain3.sh: not found
+/bin/sh: /tmp/etc/tr181firewall_chain4.sh: not found
+/bin/sh: /tmp/etc/tr181firewall_chain5.sh: not found
+/bin/sh: /tmp/etc/tr181firewall_chain6.sh: not found
+/bin/sh: /tmp/etc/tr181firewall_chain7.sh: not found
+filename = topaz-linux.lzma.img
+iptables v1.4.11: Couldn't find target `TR181_FrwlChain1Input'
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables v1.4.11: Couldn't find target `TR181_FrwlChain1Output'
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables v1.4.11: Couldn't find target `TR181_FrwlChain1Forward'
+
+Try `iptables -h' or 'iptables --help' for more information.
+ip6tables v1.4.11: Couldn't find target `TR181_FrwlChain1Input'
+
+Try `ip6tables -h' or 'ip6tables --help' for more information.
+ip6tables v1.4.11: Couldn't find target `TR181_FrwlChain1Output'
+
+Try `ip6tables -h' or 'ip6tables --help' for more information.
+ip6tables v1.4.11: Couldn't find target `TR181_FrwlChain1Forward'
+
+Try `ip6tables -h' or 'ip6tables --help' for more information.
+iptables v1.4.11: Couldn't find target `TR181_FrwlChain0Input'
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables v1.4.11: Couldn't find target `TR181_FrwlChain0Output'
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables v1.4.11: Couldn't find target `TR181_FrwlChain0Forward'
+
+Try `iptables -h' or 'iptables --help' for more information.
+ip6tables v1.4.11: Couldn't find target `TR181_FrwlChain0Input'
+
+Try `ip6tables -h' or 'ip6tables --help' for more information.
+ip6tables v1.4.11: Couldn't find target `TR181_FrwlChain0Output'
+
+Try `ip6tables -h' or 'ip6tables --help' for more information.
+ip6tables v1.4.11: Couldn't find target `TR181_FrwlChain0Forward'
+
+Try `ip6tables -h' or 'ip6tables --help' for more information.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+iptables: No chain/target/match by that name.
+create_fullnat_chain_boot
+
+Enter cwmp boot, we will start tr69 Process
+Jan  1 00:00:37 miniupnpd[1375]: HTTP listening on port 44891
+iptables v1.4.11:
+The "nat" table is not intended for filtering, the use of DROP is therefore inhibited.
+
+
+Try `iptables -h' or 'iptables --help' for more information.
+The remaining IMEM space cannot accommodate section .imem_text !!
+Remaining IMEM space: 6056 bytes	Section Size: 6316 bytes
+insmod: can't insert '/lib/modules/hw_nat.ko': File exists
+done
+SetParameterForDropPkt. ioctl SIOCDEVPRIVATE_PKTDROP_PARM failed
+droppkt_execute. SetParameterForDropPkt Fail.
+iptables v1.4.11: Port "-j" does not resolve to anything.
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables v1.4.11: Port "-j" does not resolve to anything.
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables v1.4.11: Port "-j" does not resolve to anything.
+
+Try `iptables -h' or 'iptables --help' for more information.
+iptables v1.4.11: Port "-j" does not resolve to anything.
+
+Try `iptables -h' or 'iptables --help' for more information.
+Server bind failed. Server already running? Proper permissions?
+killall: bftpd: no process killed
+rmmod: can't unload module 'xt_layer7': No such file or directory
+/etc/lanAlias0.conf
+ftp switch turn on
+sip switch turn off
+h323 switch turn on
+rtsp switch turn on
+l2tp switch turn on,sw_state=
+iptables: Bad rule (does a matching rule exist in that chain?).
+ipsec switch turn on,sw_state=
+iptables: Bad rule (does a matching rule exist in that chain?).
+ QTN bootup done. qtnModuleInitFailCnt = 1/10
+ QTN bootup done. qtnModuleInitCheckCnt = 1/10
+no local devices were found (status=54)
+valid subcommands:
+memrl           dbamemrl        memwl           modifybit
+memwl2          memrw           memww           memory
+memcpy          fillmem         mac             onutype
+exmdio          autopvc         wan2lan         internet
+phone1          bt              24g             button
+mfg             tr69            watch           sfepcheck
+gdmpDebug       gdmpReg         gdmpMemory      ver
+imginfo         voiptest        bindshowtask    bobcarlibration
+Jan  1 00:01:03 homezone[1545]: homezone is starting
+
+Jan  1 00:01:03 homezone[1545]: homezone is started
+
+roaming_boot@260: Add support mode flag.
+Illegal target name 'Tr69Black_BROUTING'.
+Internet red led flash on(4Hz). num = 118
+valid subcommands:
+adsl
+
+getMiniBootCalstate@163: read calstate =3  from =/var/qtn_mini_boot_calstate===
+============rmt_qcsmngr  ConfigState Create============
+
+rmtQcsMngrReadConfig@897: intfId = 0 enblAutoGenerateKeyPassphrase = 0
+
+rmtQcsMngrReadConfig@897: intfId = 1 enblAutoGenerateKeyPassphrase = 0
+
+rmtQcsMngrSetupQTN@545: updateMiniboot flag is disabled.
+task
+rmtQcsMngrSetupQTN@563: needUptateEnv == 0
+set: invalid
+rmtQcsMngrSetupQTN@568:  change the updateMiniboot to disable automatically !!
+number '0x8'
+cp: can't stat '/etc/udhcp_lease': No such file or directory
+
+rmtQcsMngrWatchDogMonitor@1270:5G watchdog: interfaceDownCount = 1 /20.
+fopen() error!
+Mon Aug  1 00:00:00 UTC 2016
+Server bind failed. Server already running? Proper permissions?
+<<< VoIP Init >>>
+MTK DSP support
+voip_loader start
+[1] PCM V2.4 (Jan 12 2018 18:07:08)
+[2] PCM V2.4 (Jan 12 2018 18:07:11)
+==>getMacEntryByIndex(): no sta existance
+==>getMacEntryByIndex(): no sta existance
+==>getMacEntryByIndex(): no sta existance
+==>getMacEntryByIndex(): no sta existance
+Major Num:255, device: spi
+START CHECK ZARLIN ZSI
+cp: can't stat '/etc/udhcp_lease': No such file or directory
+fopen() error!
+start_soniq.sh@boot(): bring up rpecat successfully!
+init mod-slic3,interface:ZSI,devNum:1,gpio:2000
+ZSI
+set slic type: ===0===
+set interface_type: ===1===
+set slicid: ===0===
+======slic reset 7512======
+
+SPI_Reset
+======spi check zarlink======
+res_arr[0]:0x8
+res_arr[1]:0x49
+le9641_deviceVerify RCNPCN success!
+param.data:le9641
+set slic type: ===0===
+set interface_type: ===1===
+set slicid: ===1===
+======slic reset 7512======
+
+SPI_Reset
+======spi check zarlink======
+res_arr[0]:0x0
+res_arr[1]:0x0
+[zarlink] unknown slic type!
+param.data:
+PCM2 and SLIC Controller Module has been unloaded
+[SLIC] le9641
+Loading le9641,slic num:1
+[BSA_PEER:main:2673] mac_array = c0,3d,d9,ad,6f,98
+[BSA_PEER:monitor_fat_control:765] FAT Monitor Thread Enter.
+[BSA_PEER:checkWifiStatus:798] Check Wifi Thread Enter.
+init slicFunc slic1:9
+SPI_Reset
+SLIC_DeviceVerify
+devInfo->deviceNum=0 res_arr[0]=8 res_arr[0]=49
+le9641_deviceVerify Success!
+Microsemi VP_API V2.24.0
+DEVICE_VERIFY ret:1
+pcm1 ch num:1 pcm2 ch num:0
+Init fxsNum(1) + fxoNum(0) = slic_ch_num(:1) , deviceNum(1)
+[DBG SLIC_Init:L587]FXS_NUM=1 FXO_NUM=0
+
+le9641_deviceInit 0
+le9641_slicParamReset Successful(CountryCode=Default)
+AddTimer: get now_time for first time
+ThreadedTimerCheck: get last for first time
+cp: can't stat '/etc/udhcp_lease': No such file or directory
+fopen() error!
+Calibration completed
+
+le9641_Init_Cnt = 83
+CODEC_LINEAR setting
+FXS-0 timeslot:2
+fxs0 gain--TX :4000 RX: 4000
+Loading common
+init mod-ksocket
+
+rmtQcsMngrWatchDogMonitor@1270:5G watchdog: interfaceDownCount = 2 /20.
+complete
+ Manually enable SONiQ feature.
+ QTN startprod.
+cp: can't stat '/etc/udhcp_lease': No such file or directory
+start_soniq.sh@boot(): bring up bsa_peer_ecnt successfully!
+fopen() error!
+init mod-acodec
+init mod-foip3
+
+===============================
+|| MTK DSP init successfully ||
+===============================
+
+dbgTool_init init v2.0
+voip loader end
+The remaining IMEM space cannot accommodate section .imem_text !!
+Remaining IMEM space: 6056 bytes	Section Size: 14528 bytes
+offset of skb->data:114 skb->mark:9c skb->dev:14 skb->ppe_magic:ea skb->users:11c
+size of skb struct 130
+offset of net_device->flags:E0
+size of net_device struct 3C0
+cp: can't stat '/etc/udhcp_lease': No such file or directory
+fopen() error!
+
+rmtQcsMngrWatchDogMonitor@1270:5G watchdog: interfaceDownCount = 3 /20.
+pid 1778's current affinity mask: 0
+pid 1778's new affinity mask: 8
+pid 1772's current affinity mask: 0
+pid 1772's new affinity mask: 8
+pid 1814's current affinity mask: 0
+pid 1814's new affinity mask: 8
+pid 1812's current affinity mask: 0
+pid 1812's new affinity mask: 8
+pid 1813's current affinity mask: 0
+pid 1813's new affinity mask: 8
+pcmConfig, reinit_pcm_flag==1
+pcmBufReInit
+cp: can't stat '/etc/udhcp_lease': No such file or directory
+fopen() error!
+Restarting
+killall: voiceApp: no process killed
+killall: mm.exe: no process killed
+killall: icf.exe: no process killed
+<<< VoIP Init Finished >>>
+/usr/etc/init.d/rcS: line 1256: [y: not found
+hw_nat -U 4 4 5 15
+done
+hw_nat -N 3
+done
+cp: can't stat '/etc/udhcp_lease': No such file or directory
+fopen() error!
+
+[ENTERED]:ICF_ES
+
+INFO: AUTO_SCALE: 1
+
+INFO: MODE_OF_OPERATION: 0
+
+INFO: SIP_COMPACT_HDRS: NO
+
+INFO: NW_TRACE_ENABLED: YES
+INFO: ICF_DEF_SIP_SERVER_PORT: 6062
+INFO: ICF_DEF_SIP_PROXY_PORT: 6061
+INFO: TRANSPORT_MODE: 0
+INFO: ICF_SYS_RESOURCE_LIMIT: 1
+
+[ENTERING]:icf_es_init
+[ICF_ES]:PORT initalized succesfully
+icf_port_open_ipc_channel path = /var/iptk_es.chanl
+the open channel succeded
+exit from the es init
+
+rmtQcsMngrWatchDogMonitor@1270:5G watchdog: interfaceDownCount = 4 /20.
+cp: can't stat '/etc/udhcp_lease': No such file or directory
+13d8e5cbcc59736a38c7c2bcaa079ac613d8e5cbcc59736a38c7c2bcaa079ac613d8e5cbcc59736a38c7c2bcaa079ac613d8e5cbcc59736a38c7c2bcaa079ac613d8e5cbcc59736a38c7c2bcaa079ac613d8e5cbcc59736a38c7c2bcaa079ac613d8e5cbcc59736a38c7c2bcaa079ac613d8e5cbcc59736a38c7c2bcaa079ac613d8e5cbcc59736a38c7c2bcaa079ac613d8e5cbcc59736a38c7c2bcaa079ac613d8e5cbcc59736a38c7c2bcaa079ac613d8e5cbcc59736a38c7c2bcaa079ac613d8e5cbcc59736a38c7c2bcaa079ac613d8e5cbcc59736a38c7c2bcaa079ac6fopen() error!
+ADAM Init Success
+[DBG le9641_shutdownHw:L821]le9641_shutdownHw
+[DBG SLIC_Reset:L294]slic reset num:0
+
+[csmd]: (2.0.2-93d6d27-35d16af) started(0x9ca030)
+[DBG SLIC_Reset:L304]slic reset num:0
+
+600-600
+[DBG SLIC_Init:L587]FXS_NUM=1 FXO_NUM=0
+
+le9641_deviceInit 0
+le9641_slicParamReset Successful(CountryCode=BRA-Brazil)
+1470009609 [CSM ] (csm_create_bss_db   :0774)netlink_receive@566: New client_pid: 1718
+ Create BSS database with max size = 0
+1470009609 [CSM ] (csm_create_station_d:0706) Create station database with max size = 1024
+*reg=00003600 value:0005e30b (ext_switch:0)
+*reg=00003500 value:0005e30b (ext_switch:0)
+*reg=00003600 value:0005e30b (ext_switch:1)
+*reg=0000210c value:000fff10 (ext_switch:1)
+*reg=0000220c value:000fff10 (ext_switch:1)
+*reg=0000230c value:000fff10 (ext_switch:1)
+*reg=0000240c value:000fff10 (ext_switch:1)
+*reg=0000250c value:000fff10 (ext_sCalibration completed
+
+le9641_Init_Cnt = 81
+CODEC_LINEAR setting
+FXS-0 timeslot:2
+fxs0 gain--TX :4000 RX: 4000
+slic_kpc_ioctl: cid:0 cad_num:3
+DSP activated success
+slic_kpc_ioctl: cid:0 cad_num:3
+DSP activated success
+DSP set event handler success
+PHONE > Dump DSP setting!!
+
+ ==== PhoneDumpAdamDspQuery START =====
+dspId = 1
+numOfChan= 1
+strmsPerChan=2
+codecSupport=0xb7f
+ptimeSupport=0x7
+rtpRedundancy=0
+maxEcTailLength=2
+
+ ==== PhoneDumpAdamDspQuery END =====
+[channel 0 : check intf setting!!
+
+ PhoneDumpAdamIntfConf > ENTER
+[if conf]
+intf =0
+type =0
+lineState =1
+hookState =1
+pol =0
+hwProfId =34
+[if conf- ring prof]
+cad[0]: onTime/offTime =1000/4000
+cad[1]: onTime/offTime =1000/4000
+cad[2]: onTime/offTime =1000/4000
+dur =360000
+[if conf- ring prof - CID]
+format =0
+fskPower =-10
+cidAt =1
+cidWaitTime =300
+[if conf- hook Ts]
+flashMin=150
+flashMax=700
+releaseMin=700
+autoFlashDur=400
+[channel 0 : check channel setting!!
+
+ PhoneDumpAdamChannelConf > ENTER
+[channel conf]
+ch =0
+detectMask =0x13
+ampTx =0
+ampRx =0
+digitTx =0
+digitRx =0
+ecEnable =1
+dtmfdur =12
+
+rmtQcsMngrWatchDogMonitor@1270:5G watchdog: interfaceDownCount = 5 /20.
+DSP config country 44 success
+
+ICF:Exit from function(): icf_sm_set_error_hdlr, with retval 1
+ICF:Exit from function(): icf_sm_process_mesg, with retval 1
+ICF:Entered function(): icf_mrm_recv_msg
+ICF:Entered function(): icf_dbm_get_port_data
+ICF:Exit from function(): icf_dbm_get_port_data, with retval 1
+[ES_TRACE]:MSG received successfuly from App: 27 bytes
+
+***********ICF_PRINT_HDR_DATA_START**************
+API_ID = 158  : ICF_SET_TRACE_REQ
+SOURCE_ID =107  :  DEST_ID =6  :  APP_ID =1  :CALL_ID= 65535
+API_LENGTH= 27
+***********ICF_PRINT_HDR_DATA_END***********
+
+
+ICF:Exit from function(): icf_mrm_recv_msg, with retval 1
+ICF:Entered function(): icf_cfg_fetch_app_conf
+ICF:Entered function(): icf_sm_process_mesg
+ICF:Entered function(): icf_sm_api_to_event
+ICF:Exit from function(): icf_sm_api_to_event, with retval 1
+ICF:Entered function(): icf_sm_set_trace_req_hdlr================================================
+User Agent related info = GPT-2741GNAC-N1 c03dd9ad6f98 BR_g5.9_1.11(WVK.0)b32
+================================================
+voiceApp:-   GET IP ADDRESS FAIL!
+voiceApp:-   GET IPADDRESS FAIL : CFG_SET_SELF_IP_REQ
+voiceApp > ICF_CFG_SET_SELF_IP_REQ towards IP Phone Toolkit Failed.
+voiceApp:-   GET IP ADDRESS FAIL!
+voiceApp:-   GET IP ADDRESS FAIL!
+voiceApp:-   GET IP ADDRESS FAIL!
+
+[start_cc@15140]checkUnqCertKey
+
+rmtQcsMngrWatchDogMonitor@1270:5G watchdog: interfaceDownCount = 6 /20.
+**
+rmtQcsMngrWatchDogMonitor@1270:5G watchdog: interfaceDownCount = 7 /20.
+**
+rmtQcsMngrWatchDogMonitor@1270:5G watchdog: interfaceDownCount = 8 /20.
+ QTN startprod is done qtnStartprodDoneCnt = 5
+
+rmtQcsMngrWpsSetup@3428:QCSAPI_RT_CFG_WPS_AP_PIN_SET_CMD fail
+
+rmtQcsMngrAdvanceSetup@4014:QCSAPI_RPC_DFS_S_RADIO_SET_CMD fail
+
+rmtQcsMngrWatchDogMonitor@1285:5G watchdog: systemFirstBoot done
+rmtQcsMngrAdvanceSetup,4257, uuid = bc329e00-1dd8-11b2-8601-c23dd9bd6f98
+
+
+rmtQcsMngrAdvanceSetup@4260:intf1 QCSAPI_RPC_WPS_UUID_SET_CMD fail
+
+rmtQcsMngrAdvanceSetup@4375: curr_carrierid=0 carrierid=0, carrier ID no need to change
+
+rmtQcsMngrBasicSetup@2769:QCSAPI_RPC_QHOP_SET_CMD fail
+
+rmtQcsMngrSecuritySetup@3334:QCSAPI_RPC_QHOP_SET_CMD fail
+rmtQcsMngrAdvanceSetup,4257, uuid = bc329e00-1dd8-11b2-8601-c23dd9bd6f98
+
+
+rmtQcsMngrAdvanceSetup@4375: curr_carrierid=0 carrierid=0, carrier ID no need to change
+
+cfg_propagation@3183: QTN qsteer_cfg_update ret:0
+
+rmtQcsMngrSetupQTN@1015: cfg_propagation done
+Bring up qharvestd...
+Aug  1 00:00:40 qharvestd[2787]: qharvestd[notice]: qharvestd v1.33.1 started
+Aug  1 00:00:42 qharvestd[2787]: qharvestd[notice]: Pktlogger support detected
+Aug  1 00:00:44 qharvestd[2787]: qharvestd[error]: curl_easy_perform(): Couldn't resolve host 'qharvest-prod.quantenna.com'
+
+Aug  1 00:00:55 qharvestd[2787]: qharvestd[error]: curl_easy_perform(): Couldn't resolve host 'qharvest-prod.quantenna.com'
+
+start to monitor the cfg_manager process.
+start to tef11nMngr.
+Aug  1 00:01:14 qharvestd[2787]: qharvestd[error]: curl_easy_perform(): Couldn't resolve host 'qharvest-prod.quantenna.com'
+
+Aug  1 00:01:57 qharvestd[2787]: qharvestd[error]: curl_easy_perform(): Couldn't resolve host 'qharvest-prod.quantenna.com'
